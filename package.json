@@ -12,7 +12,7 @@
     "url": "https://github.com/amineProjects/AbdelhamidBenBadis.git"
   },
   "scripts": {
-    "serve":"browser-sync start --server --files \"**/*.html, !node_modules/**/*.html\""
+    "start":"browser-sync start --server --files \"**/*.html, src/css/*.css, !node_modules/**/*.html\""
   },
   "devDependencies": {
     "autoprefixer": "^9.0.1",
