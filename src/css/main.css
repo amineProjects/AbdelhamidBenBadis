@@ -1,13 +1,22 @@
 body{
 	font-size: 2em;
 	background-color: rgb(233, 233, 233);
+	margin: 0;
 }
 
 *{
 	box-sizing: border-box;
 }
 
-
+.fixed{
+	background-color: coral;
+	position: fixed;
+	top: 0;
+	transition: 0.3s;
+	width: 100%;
+	color: rgb(235, 235, 235);
+	z-index: 5;
+}
 .columnFlex{
 	display: flex;
 	flex-direction: column;
@@ -73,6 +82,10 @@ p{
 
 .container{
 	padding: 10px 16px;
+}
+
+.topMargin{
+	margin-top: 150px;
 }
 @media screen and (min-width: 600px){
 	.grid {
