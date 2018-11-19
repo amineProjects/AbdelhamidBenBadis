@@ -1,6 +1,9 @@
 body{
-	font-size: 2em;
-	background-color: rgb(233, 233, 233);
+	font-size: 1.5em;
+	color: rgb(4, 2, 29);
+	background-image: url(/src/images/Artboard150x15070.png);
+	background-color: rgba(1, 74, 102, 0.5);
+	background-repeat: repeat;
 	margin: 0;
 }
 
@@ -9,7 +12,11 @@ body{
 }
 
 .fixed{
-	background-color: coral;
+	background: linear-gradient(
+		45deg,
+		#0370AD 0%,
+		#00012A 75%
+	);
 	position: fixed;
 	top: 0;
 	transition: 0.3s;
@@ -22,15 +29,21 @@ body{
 	flex-direction: column;
 }
 
+#ref{
+	font-size: 0.7em
+}
 #reference{
 	margin-bottom: 20px;
+
 }
+
 .grid{
 	min-width:150px ;
 	height: auto;
-	opacity: .8;
+	opacity: .7;
 	margin: -10px auto;
-	padding:0px 10px;
+	padding-left: 10px;
+	margin-right: -30px;
 	display: grid;
 	grid-template-rows: repeat(auto-fit,minmax(60px,1fr)) ;
 	justify-items: center;
@@ -45,9 +58,6 @@ img,p,h1,h2,h3,h4,a{
 	margin: auto;
 }
 
-.gray{
-	background-color: rgb(185, 185, 185);
-}
 
 a{
 	color: #000;
@@ -56,6 +66,7 @@ a{
 
 img{
 	border-radius: 10px;
+	margin-bottom: 10px;
 }
 
 p{
@@ -64,7 +75,14 @@ p{
 .social{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-around;background: linear-gradient(
+		-45deg,
+		rgba(3, 111, 173, 0.8) 0%,
+		rgba(0, 1, 42, 0.6) 85%
+	);
+	width: 100%;
+	margin: 0px auto;
+	padding-bottom: 20px;
 }
 
 .centerText{
@@ -72,7 +90,8 @@ p{
 }
 
 .card{
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+	background-color: #79BCD7;
 	transition: 0.3s;
 }
 
@@ -85,7 +104,7 @@ p{
 }
 
 .topMargin{
-	margin-top: 150px;
+	margin-top: 200px;
 }
 @media screen and (min-width: 600px){
 	.grid {
@@ -97,11 +116,21 @@ p{
  @media screen and (min-width: 800px){
     .grid {
       font-size: 30px;
-      padding: 20px;
+	  padding: 20px;
+	  margin: 0px auto;
 	}
 	img{
 		align-self: center;
 	}
+	.social{
+		width: 100%;
+	}
+	#reference{
+		font-size: 30px;
+	}
+	.topMargin{
+	margin-top: 130px;
+}
 }
 
 
